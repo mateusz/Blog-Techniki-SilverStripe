@@ -3,4 +3,7 @@ layout: default
 ---
 {% assign body = content %}
 {% include post-div.html %}
-{% unless page.hide_meta %}{% related %}{% endunless %}
+<div class="related">
+	<h3>Latest Posts</h3>
+	<p>{% for post in site.posts limit:5 %}<a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>{% unless forloop.last %} &middot; {% endunless %}{% endfor %}</p>
+</div>
