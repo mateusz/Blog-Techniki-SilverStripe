@@ -126,7 +126,7 @@ code {
 }
 
 pre {
-	font: 0.7em Monaco, monospace;
+	font: 0.7em Monaco, Consolas, monospace;
 	line-height: 1.4em;
 	display: block;
 	color: white;

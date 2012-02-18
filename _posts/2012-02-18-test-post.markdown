@@ -1,0 +1,16 @@
+---
+layout: post
+title: Test Post
+---
+
+Here we have an example of a post.
+
+{% highlight php %}
+<?php
+class Test {
+	public function test() {
+		DataObject::get('Page', "\"Page\".\"ID\"='2'");
+	}
+}
+
+{% endhighlight %}
