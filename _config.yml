@@ -14,3 +14,7 @@ auto: true
 server_port: 4000
 url: http://mini.local/mblog/_site
 baseurl: http://mini.local/mblog/_site/
+exclude:
+  tags
+  .gitignore
+  .git

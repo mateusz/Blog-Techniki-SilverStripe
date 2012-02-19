@@ -1,8 +1,8 @@
 body {
 	margin: 0;
 	padding: 0;
-	font: 18px  "ff-dagny-web-pro-1","ff-dagny-web-pro-2";
-	line-height: 1.7em;
+	font: 17px  "ff-dagny-web-pro-1","ff-dagny-web-pro-2";
+	line-height: 1.6em;
 	color: black;
 	background: white;
 }
@@ -32,6 +32,7 @@ body {
 #header {
 	margin-bottom: 3em;
 	padding-top: 0.3em;
+	line-height: 30px;
 }
 
 #footer {
@@ -51,7 +52,7 @@ h2 {
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 2.2em;
 	font-weight: normal;
 	border-bottom: 1px solid #ddd;
 }
@@ -87,7 +88,7 @@ code {
 	border-top: 1px solid #ddd;
 	padding-top: 0.1em;
 	padding-bottom: 0.1em;
-	margin-top: -0.6em;
+	margin-top: 1.6em;
 }
 
 .meta a, .content a, .related a {
@@ -143,5 +144,17 @@ pre {
 h3 {
 	font-size: 1.3em;
 	font-weight: normal;
+}
+
+div.tagline {
+	float: right;
+}
+
+div.tagline a.silverstripe {
+	text-indent: -9999px;
+	display: inline-block;
+	height: 28px;
+	width: 114px;
+	background: url(../images/silverstripe.png)
 }
 

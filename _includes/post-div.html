@@ -16,7 +16,7 @@
 {% unless page.hide_meta %}
 	<div class="meta">
 		<span class="author">Mateusz Uzdowski</span> &middot;
-		<span class="date">{{ page.date | date: "%e" | ordinalize }} {{ page.date | date: "%B"}} {{ page.date | date: "%Y"}}</span>
+		<span class="date">{{ page.date | date: "%e" | ordinalize }}.{{ page.date | date: "%m" | ordinalize }}.{{ page.date | date: "%Y"}}</span>
 	</div>
 {% endunless %}
 </div>

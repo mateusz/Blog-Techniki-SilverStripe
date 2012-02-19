@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "All posts"
+title: "Wszystkie artykuły"
 ---
-<h1>All posts</h1>
+<h1>Wszystkie artukuły</h1>
 <div class="related">
 	<p>
 		{% for post in site.posts %}
-			<a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a> &middot; {{ post.date | date: "%e" | ordinalize }} {{ post.date | date: "%B"}} {{ post.date | date: "%Y"}}
+			<a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a> &middot; {{ post.date | date: "%e" | ordinalize }}.{{ post.date | date: "%m"}}.{{ post.date | date: "%Y"}}
 			{% unless forloop.last %}
 				<br/>
 			{% endunless %}

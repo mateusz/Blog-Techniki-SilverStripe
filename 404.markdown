@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "404: Page not found!"
+title: "404: strony nie znaleziono."
 hide_meta: true
 ---
-I am terribly sorry, the address you are looking for does not contain anything.
+Bardzo mi przykro, ale ta strona nie istnieje.
 
-[Proceed to home instead]({{ site.url }})
+[Udaj się na stronę główną]({{ site.url }})
