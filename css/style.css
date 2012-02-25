@@ -141,7 +141,7 @@ code {
 }
 
 pre {
-	font: Monaco, Consolas, monospace;
+	font-family: Monaco, Consolas, monospace;
 	line-height: 1.4em;
 	display: block;
 	color: white;
