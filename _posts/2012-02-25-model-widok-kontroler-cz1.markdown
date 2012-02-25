@@ -8,12 +8,13 @@ Ze wzorcem projektowym "model, widok, kontroler" (ang. *model, view, controller*
 
 Wzorzec MVC to sposób na podział programu na logiczne warstwy. Nie dotyczy on tylko aplikacji internetowych - może znaleźć zastosowanie również na desktopie, a nawet w programach terminalowych. Można go użyć wszędzie gdzie znajdziemy dane, logikę przetwarzania, oraz interfejs użytkownika - bo odnosi się do tych właśnie trzech niezbędnych elementów programów interaktywnych.
 
+<!-- more start -->
 Zaletą podejścia MVC jest możliwość rozdzielenia zadań na różnych członków zespołu. Ma to też sens logiczny i ułatwia zrozumienie kodu. W aplikacjach internetowych w naturalny sposób kontekstem niektórych operacji są:
 * same dane - np. połączenie nazwiska i imienia w "pełne nazwisko" ma sens nawet bez aplikacji i bez użytkownika
 * akcje użytkownika - np. prośba o usunięcie rekordu 'Mateusz Uzdowski'
 * odpowiedź serwera - np. przekazanie rezultatu w formie wiadomości "Rekord o nazwie 'Mateusz Uzdowski' został usunięty"
 
-### Model
+## Model
 
 *Model* odzwierciedla strukturę i powiązania danych. W aplikacjach internetowych jest to definicja (schema) bazy danych -  tabele, kolumny, relacje i klucze (indeksy). W SilverStripe *model* tworzony jest poprzez narzędzia dostarczane przez framework - aby na ile to możliwe uniezależnić nas od specyficznych wymagań poszczególnych baz danych. Obiekty bazy danych konstruowane są automatycznie na podstawie definicji klas w PHP.
 
@@ -71,7 +72,7 @@ mysql> describe Ingredient;
 
 Oto model składnika - gotowy do przyjęcia wszystkich elementów sałatki. Do pracy z takim modelem nie potrzebujemy użytkownika, serwera, Internetu, ani przeglądarki - wymagana jest tylko baza danych.
 
-### Kontroler
+## Kontroler
 
 Zdefiniowaliśmy już model składnika, ale jeśli ma on być do czegoś użyteczny, musimy mieć możliwość wchodzić z nim w interakcję. Działania na modelu są domeną kontrolera - stwórzmy więc kuchennego pomocnika który wykona za nas całą ciężką i niewdzięczną robotę.
 
@@ -137,3 +138,5 @@ A więc wszystko zadziałało bardzo dobrze - mamy teraz sałatkę w bazie! Moż
 To wszystko może dla nas zrobić kontroler. zasadzie mamy już teraz funkcjonujące oprogramowania, brakuje jednak bogatszego interfejsu. 
 
 [Kontunuuj do drugiej części, gdzie zajmiemy się widokiem](2012/02/model-widok-kontroler-cz2).
+
+<!-- more end -->

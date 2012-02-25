@@ -8,7 +8,8 @@ description: Krótki opis czym jest SilverStripe i jak pozycjonuje się w świec
 
 Moim zdaniem SilverStripe sprawdza się zarówno w przypadku pojedynczych programistów-freelancerów (po prostu pracuje się z nim przyjemnie i co ważne - szybko, nie trzeba za bardzo trenować użytkowników), jak i w przypadku zespołów pracujących nad jedną stroną (można oddzielić szablony i design od programowania, jest pokryty testami, poddaje się continuous integration, jest skalowalny). Nadaje się do zastosowań prywatnych i non-profit, ale też do produktów komercyjnych.
 
-### Ogólnie o systemie
+<!-- more start -->
+## Ogólnie o systemie
 
 Moim zdaniem użyteczność SilverStripe'a opiera się na następujących jego cechach:
 
@@ -36,7 +37,7 @@ Inne warte wspomnienia elementy systemu, które okazują się szczególnie istot
 * Partial caching - gdy Twoja strona urośnie i trzeba będzie przeprowadzić optymalizację (dostępny jest też static publisher, który kompiluje całą stronę do HTMLa)
 * Modułowość - jest kilkadziesiąt open sourcowych modułów do SilverStripe, niektóre bardzo przydatne. Rdzenne moduły najlepiej pobierać z [GitHub](https://github.com/silverstripe/), ale poza tym jest całkiem sporo innych modułów na wolności.
 
-### Pomoc i informacje
+## Pomoc i informacje
 
 Do poczytania i posłuchania:
 * [Demo](http://demo.silverstripe.com/) - szybka dawka doświadczenia w formacie wizualnym
@@ -48,3 +49,5 @@ Interaktywne formy uzyskania pomocy:
 * [IRC](http://www.silverstripe.org/irc-channel/) - dla zdesperowanych i ciekawych - można mnie tam znaleźć jako "mateuszsz" ([szybki dostęp](http://irc.silverstripe.com/))
 * [Forum](http://silverstripe.org/forum)
 * [Lista mailingowa - core development](http://groups.google.com/group/silverstripe-dev) - tutaj o rozwoju samego frameworka i CMSa
+
+<!-- more end -->

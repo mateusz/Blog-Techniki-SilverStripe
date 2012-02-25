@@ -4,9 +4,10 @@ title: Model, widok, kontroler część 2
 description: Opis wzorca model, widok, kontroler.
 ---
 
-W [poprzedniej części](2012/02/model-widok-kontroler-cz1) zajęliśmy się modelem i kontrolerem (czyli strukturą danych i logiką przetwarzania), tutaj natomiast zajmiemy się wyświetlaniem rezultatu naszych starań.
+W [poprzedniej części](2012/02/model-widok-kontroler-cz1) zajęliśmy się modelem i kontrolerem (czyli strukturą danych i logiką przetwarzania), tutaj natomiast zajmiemy się wyświetlaniem rezultatu naszych starań (czyli widokiem).
 
-### Widok jako część kontrolera
+<!-- more start -->
+## Widok jako część kontrolera
 
 Aby dopełnić aplikację, potrzebujemy interfejsu zwrotnego - widoku który przesłany zostanie do użytkownika, aby mógł on zorientować się co się właściwie wydarzyło. W niektórych przypadkach kontroler będzie równoczesnie pełnił funkcję widoku. <code>KitchenHelper</code> moglibyśmy zmodyfikować następująco.
 
@@ -37,7 +38,7 @@ Smacznego!
 
 Jednak w bardziej skomplikowanych aplikacjach, widok będzie znacznie bardziej skomplikowany niż pojedyncza linia teskstu. Dlatego warto wydzielić go do osobnego modułu.
 
-### Wydzielony widok
+## Wydzielony widok
 
 W SilverStripe używamy własnego języka szablonów, pliki takie mają rozszerzenie <code>*.ss</code> i mogą znajdować się albo w katalogu projektu <code>mysite/templates</code>, albo w dedykowanym temacie graficznym w <code>themes/nazwa_szablonu/templates</code>. Zaletą drugiego podejścia jest możliwość zainstalowania kilku różnych tematów graficznych na jednej stronie, co może być użyteczne w przypadku użycia modułu [subsites](https://github.com/silverstripe/silverstripe-subsites).
 
@@ -62,7 +63,7 @@ To wszystko! Mamy gotową użyteczną aplikację, rozdzieloną na trzy logiczne 
 
 Przy pisaniu aplikacji kontroler może także zwracać dane w inny sposób - na przykład jeśli wywołanie odbyło się poprzez AJAX, możemy zwrócić JSON, które następnie zostanie przetworzony przez frontendowy JavaScript. W tej sytuacji JS da facto pełnił będzie funkcje widoku - może on używać swojego własnego języka szablonów, albo tworzyć interfejs w inny sposób.
 
-### Co dalej?
+## Co dalej?
 
 Kod z tego artykułu możesz znaleźć na [GitHub](https://github.com/mateusz/Techniki-SilverStripe). Jeśli korzystasz z git, wystarczy sklonować kod i skonfigurować kilka parametrów SilverStripe.
 
@@ -79,3 +80,5 @@ Jeśli chciałbyś jeszcze popracować z tym kodem, oto kilka użytecznych zada�
 * Skonfiguruj URL Rewriting tak, aby można było uaktywnić pomocnika kuchennego poprzez <code>http://localhost/KitchenHelper/makeSalad/zdrowa</code> - jeśli używasz Apache, obejrzyj plik <code>.htaccess</code> w [silverstripe-installer](https://github.com/silverstripe/silverstripe-installer/blob/master/.htaccess).
 * Zmień globalny routing w taki sposób aby można było tą samą operację wykonać poprzez <code>http://localhost/pomocnik/makeSalad/zdrowa</code> - [konfiguracja](http://api.silverstripe.org/trunk/sapphire/control/Director.html#methodaddRules) taka może zostać ustawiona w <code>mysite/_config.php</code>.
 * Stwórz własny temat graficzny w katalogu <code>themes</code> i przełącz na niego frameworka - można to zrobić także poprzez [ustawienia](http://api.silverstripe.org/trunk/sapphire/view/SSViewer.html#methodset_theme) w <code>mysite/_config.php</code>.
+
+<!-- more end -->

@@ -13,6 +13,14 @@ body {
 	margin-right: auto;
 }
 
+#footer {
+	background: #222222;
+	color: white;
+	bottom: 0px;
+	position: fixed;
+	width: 100%;
+}
+
 .menubar {
 	color: #aaa;
 	line-height: 1.3em;
@@ -40,8 +48,13 @@ body {
 	padding-bottom: 0.3em;
 }
 
+h3 {
+	font-size: 1.3em;
+	font-weight: normal;
+}
+
 h2 {
-	font-size: 1.8em;
+	font-size: 1.7em;
 	font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2";
 	font-weight: 100;
 	line-height: 1.2em;
@@ -92,7 +105,7 @@ code {
 	margin-top: 1.6em;
 }
 
-.meta a, .content a, .related a {
+.meta a, .content a, .related a, a {
 	color: #004491;
 	text-decoration: none;
 	border-bottom: 1px dotted #d3dfee;
@@ -103,7 +116,7 @@ code {
 
 }
 
-.meta a:hover, .content a:hover, .related a:hover {
+.meta a:hover, .content a:hover, .related a:hover, a:hover {
 	border-bottom: 1px solid #d3dfee;
 }
 
@@ -142,11 +155,6 @@ pre {
 
 .content p {
 	margin-bottom: 1.3em;
-}
-
-h3 {
-	font-size: 1.3em;
-	font-weight: normal;
 }
 
 div.tagline {
