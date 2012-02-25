@@ -20,7 +20,7 @@ Moim zdaniem użyteczność SilverStripe'a opiera się na następujących jego c
 * Który stack pan sobie życzy? - obsługuje MySQL, MSSQL, PostgreSQL i SQLite3, działa na Apache i IIS
 * Dla małych i dużych - można na nim puścić strony-wizytówki, albo duże portale rządowe
 
-Ostrzę też zęby na wersje 3.0, w której:
+Ostrzę też zęby na wersję 3.0, w której:
 
 * Interfejs CMSa zostanie odświeżony i poddany usability testing
 * Framework ("Sapphire") i CMS zostaną rozdzielone
