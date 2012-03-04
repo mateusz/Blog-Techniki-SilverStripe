@@ -2,11 +2,11 @@
 layout: post
 title: Model, widok, kontroler część 2
 description: Opis wzorca model, widok, kontroler.
+more: 1
 ---
 
 W [poprzedniej części](2012/02/model-widok-kontroler-cz1) zajęliśmy się modelem i kontrolerem (czyli strukturą danych i logiką przetwarzania), tutaj natomiast zajmiemy się wyświetlaniem rezultatu naszych starań (czyli widokiem).
 
-<!-- more start -->
 ## Widok jako część kontrolera
 
 Aby dopełnić aplikację, potrzebujemy interfejsu zwrotnego - widoku który przesłany zostanie do użytkownika, aby mógł on zorientować się co się właściwie wydarzyło. W niektórych przypadkach kontroler będzie równoczesnie pełnił funkcję widoku. <code>KitchenHelper</code> moglibyśmy zmodyfikować następująco.
@@ -81,4 +81,3 @@ Jeśli chciałbyś jeszcze popracować z tym kodem, oto kilka użytecznych zada�
 * Zmień globalny routing w taki sposób aby można było tą samą operację wykonać poprzez <code>http://localhost/pomocnik/makeSalad/zdrowa</code> - [konfiguracja](http://api.silverstripe.org/trunk/sapphire/control/Director.html#methodaddRules) taka może zostać ustawiona w <code>mysite/_config.php</code>.
 * Stwórz własny temat graficzny w katalogu <code>themes</code> i przełącz na niego frameworka - można to zrobić także poprzez [ustawienia](http://api.silverstripe.org/trunk/sapphire/view/SSViewer.html#methodset_theme) w <code>mysite/_config.php</code>.
 
-<!-- more end -->

@@ -2,13 +2,13 @@
 layout: post
 title: Wprowadzenie do SilverStripe
 description: Krótki opis czym jest SilverStripe i jak pozycjonuje się w świecie CMSów.
+more: 2
 ---
 
 [SilverStripe](http://silverstripe.org/) jest open source'owym frameworkiem i CMSem z Nowej Zelandii. Pozwala na szybkie budowanie stron od podstaw, daje do ręki narzędzie do zarządzania ich treścią, jednocześnie pozostawiając władzę programiście tam, gdzie zwyczajny użytkownik byłby zagubiony (na przykład przy instalowaniu modułów, dodawaniu pól do obiektów i konfiguracji kluczy API).
 
 Moim zdaniem SilverStripe sprawdza się zarówno w przypadku pojedynczych programistów-freelancerów (po prostu pracuje się z nim przyjemnie i co ważne - szybko, nie trzeba za bardzo trenować użytkowników), jak i w przypadku zespołów pracujących nad jedną stroną (można oddzielić szablony i design od programowania, jest pokryty testami, poddaje się continuous integration, jest skalowalny). Nadaje się do zastosowań prywatnych i non-profit, ale też do produktów komercyjnych.
 
-<!-- more start -->
 ## Ogólnie o systemie
 
 Moim zdaniem użyteczność SilverStripe'a opiera się na następujących jego cechach:
@@ -50,4 +50,3 @@ Interaktywne formy uzyskania pomocy:
 * [Forum](http://silverstripe.org/forum)
 * [Lista mailingowa - core development](http://groups.google.com/group/silverstripe-dev) - tutaj o rozwoju samego frameworka i CMSa
 
-<!-- more end -->

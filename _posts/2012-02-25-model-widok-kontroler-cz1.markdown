@@ -2,13 +2,13 @@
 layout: post
 title: Model, widok, kontroler część 1
 description: Opis wzorca model, widok, kontroler.
+more: 2
 ---
 
 Ze wzorcem projektowym "model, widok, kontroler" (ang. *model, view, controller*, MVC) warto się zapoznać, gdyż w świecie SilverStripe bez wiedzy o nim trudno będzie pisać aplikacje ze zrozumieniem.
 
 Wzorzec MVC to sposób na podział programu na logiczne warstwy. Nie dotyczy on tylko aplikacji internetowych - może znaleźć zastosowanie również na desktopie, a nawet w programach terminalowych. Można go użyć wszędzie gdzie znajdziemy dane, logikę przetwarzania, oraz interfejs użytkownika - bo odnosi się do tych właśnie trzech niezbędnych elementów programów interaktywnych.
 
-<!-- more start -->
 Zaletą podejścia MVC jest możliwość rozdzielenia zadań na różnych członków zespołu. Ma to też sens logiczny i ułatwia zrozumienie kodu. W aplikacjach internetowych w naturalny sposób kontekstem niektórych operacji są:
 * same dane - np. połączenie nazwiska i imienia w "pełne nazwisko" ma sens nawet bez aplikacji i bez użytkownika
 * akcje użytkownika - np. prośba o usunięcie rekordu 'Mateusz Uzdowski'
@@ -139,4 +139,3 @@ To wszystko może dla nas zrobić kontroler. zasadzie mamy już teraz funkcjonuj
 
 [Kontunuuj do drugiej części, gdzie zajmiemy się widokiem](2012/02/model-widok-kontroler-cz2).
 
-<!-- more end -->
