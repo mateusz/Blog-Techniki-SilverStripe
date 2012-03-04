@@ -5,7 +5,12 @@ layout: default
 
 <h1>Techniki SilverStripe</h1>
 {% for page in site.posts limit:10 %}
-{% capture body %}{{ page.content | replace:'more start -->','' | replace:'<!-- more end','' }} <p><a href="{{ site.url }}{{ page.url }}">Zobacz cały artykuł...</a></p>{% endcapture %}
+{% capture body %}
+    {% for item in page.content | split:'<!-- more start -->' limit:1 %}
+        {{ item }}
+        <p><a href="{{ site.url }}{{ page.url }}">Zobacz cały artykuł &raquo;</a></p>
+    {% endfor %}
+{% endcapture %}
 {% assign headingtag = 'h2' %}
 {% include post-div.html %}
 {% endfor %}
